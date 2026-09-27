@@ -1,0 +1,14 @@
+
+class Box<T> {
+  T value;
+  Box(this.value);
+  void display() {
+    print("Value: $value");
+  }
+}
+void main() {
+  Box<int> numberBox = Box<int>(100);
+  Box<String> textBox = Box<String>("Hello");
+  numberBox.display();
+  textBox.display();
+}
